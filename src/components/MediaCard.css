@@ -1,0 +1,61 @@
+@keyframes dropIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.media-card {
+  width: 100%;
+  height: 306px;
+  position: relative;
+  border: 2px solid var(--red);
+  border-radius: 0.2em;
+  overflow: hidden;
+  animation: .2s dropIn ease-in;
+}
+
+.media-card > * {
+  width: 100%;
+}
+
+.media-card img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.media-card h2 {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: normal;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.media-card:hover img {
+  filter: blur(10px);
+}
+
+.media-card:hover::after {
+  content: 'See details';
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 450px) {
+  .media-card h2 {
+    font-size: 1.1em;
+  }
+}

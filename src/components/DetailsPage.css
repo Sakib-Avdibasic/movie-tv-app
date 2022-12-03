@@ -1,0 +1,73 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#back-button {
+  background-color: transparent;
+  color: white;
+  margin-bottom: 1em;
+  font-size: 1.1em;
+  transition: .2s all;
+}
+
+#back-button:hover {
+  transform: translateX(-10%);
+}
+
+#details-container {
+  margin: auto;
+  animation: .5s fadeIn ease-in;
+}
+
+#details-container img {
+  border-radius: 0.3em;
+  max-height: 40vh;
+  object-fit: contain;
+}
+
+iframe {
+  border: 2px solid var(--red);
+  border-radius: 0.3em;
+  height: 40vw;
+}
+
+#details-container h2 {
+  margin: 0.5em 0 0.3em;
+}
+
+section > * {
+  width: 100%;
+}
+
+section h3 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed white;
+  padding-bottom: 0.4em;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.summary {
+  margin-top: 1em;
+  padding: 0.7em;
+  border: 1px solid white;
+  border-radius: 0.5em;
+}
+
+@media (max-width: 550px) {
+  #back-button {
+    font-size: 1em;
+  }
+  #details-container h2 {
+    font-size: 1.2em;
+  }
+  section div, .summary {
+    font-size: 0.9em;
+  }
+}

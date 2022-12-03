@@ -1,0 +1,12 @@
+.err-msg {
+  background-color: white;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.err-msg p {
+  color: black;
+  margin-top: 0.5em;
+}

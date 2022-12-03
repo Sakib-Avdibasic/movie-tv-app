@@ -1,0 +1,46 @@
+#tab-menu {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+#tab-menu li {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+#tab-menu button {
+  width: 100%;
+  padding: 0.7em;
+  font-size: 1.1em;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.3em;
+  transition: .2s all ease-in;
+}
+
+#tab-menu button:hover {
+  background-color: rgb(37, 35, 35);
+}
+
+#tab-menu .active-tab {
+  background-color: var(--red);
+  color: white;
+  border-color: transparent;
+  font-weight: bold;
+}
+
+#tab-menu .active-tab:hover {
+  background-color: rgb(216, 14, 14);
+}
+
+@media (max-width: 450px) {
+  li button {
+    font-size: 1em;
+    padding: 0.5em;
+  }
+}
