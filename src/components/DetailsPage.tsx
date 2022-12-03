@@ -54,7 +54,7 @@ const DetailsPage: FC = () => {
               {new Date(details.release_date || details.first_air_date).toLocaleDateString('en-EN', {month: 'short', day: 'numeric', year: 'numeric'})}&nbsp;
               </span>
             <span>  
-              <FontAwesomeIcon icon={faStar} color='#ffdf00'/>&nbsp;
+              <FontAwesomeIcon icon={faStar} color='#c39400'/>&nbsp;
               {details.vote_average?.toFixed(1)}
             </span>
           </h3>
